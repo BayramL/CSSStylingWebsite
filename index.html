@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Styles</title>
+</head>
+<body>
+    <header><h1>CSS Styling Cheet Sheet</h1></header>
+
+    <main id="display-box-outline">
+        <div id="display-box">Change Me</div>
+    </main>
+
+    <section id="changers">
+        <div id="background">
+            <h2>Background</h2>
+            <h3 class="background-change">Width</h3>
+            <input type="range" min="100" max="800" value="5" class="slider" id="box-width" class="background-change">
+
+            <h3 class="background-change">Height</h3>
+            <input type="range" min="100" max="400" value="5" class="slider" id="box-height" class="background-change">
+
+            <h3 class="background-change">Background-Color</h3>
+            <input type="color" id="box-color" value="#000000" class="background-change">
+
+        </div>
+        <div id="border">
+            <h2>Border</h2>
+            <h3>Border Style</h3>
+            <label for="border-styles"></label>
+            <select name="border-styles" id="border-styles">
+                <option value="none" selected="selected">None</option>
+                <option value="solid">Solid</option>
+                <option value="groove">Groove</option>
+                <option value="ridge">Ridge</option>
+                <option value="dotted">Dotted</option>
+                <option value="double">Double</option>
+                <option value="inset">Inset</option>
+                <option value="outset">Outset</option>
+            </select>
+            <h3>Border Width</h3>
+            <input type="range" min="1" max="10" value="0" class="slider" id="border-width">
+            <h3>Border Color</h3>
+            <input type="color" id="border-color" value="#0000FF">
+        </div>
+        <div id="font">
+            <h2>Font</h2>
+            <h3>Font Size</h3>
+            <input type="range" min="10" max="180" value="90" class="slider" id="font-size">
+            <h3>Font Color</h3>
+            <input type="color" id="font-color" value="#000000">
+        </div>
+        <div id="alignment">
+            <h2>Alignment</h2>
+            <h3>Align-Items</h3>
+            <select name="align-item" id="align-item">
+                <option value="center" selected="selected">Center</option>
+                <option value="flex-start">Flex-Start</option>
+                <option value="flex-end">Flex-End</option>
+            </select>
+            <h3>Justify-Content</h3>
+            <select name="justify-content" id="justify-content">
+                <option value="center" selected="selected">Center</option>
+                <option value="flex-start">Flex-Start</option>
+                <option value="flex-end">Flex-End</option>
+            </select>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
